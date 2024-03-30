@@ -11,6 +11,7 @@ namespace Learning_C_
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
+            Console.ReadKey();
         }
     }
 }
