@@ -10,7 +10,15 @@ namespace Learning_C_
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            int timeInMinutes = 160; 
+            int hours;
+            int minutes;
+
+            hours = timeInMinutes / 60;
+            minutes = timeInMinutes % 60;
+
+            Console.WriteLine(hours);
+            Console.WriteLine(minutes);
             Console.ReadKey();
         }
     }
