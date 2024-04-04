@@ -10,15 +10,15 @@ namespace Learning_C_
     {
         static void Main(string[] args)
         {
-            int timeInMinutes = 160; 
-            int hours;
-            int minutes;
+            Random rand = new Random();
 
-            hours = timeInMinutes / 60;
-            minutes = timeInMinutes % 60;
+            int value = rand.Next(0, 10); // [0, 10)
 
-            Console.WriteLine(hours);
-            Console.WriteLine(minutes);
+            while (value != 3)
+            {
+                value = rand.Next(0, 10);
+                Console.WriteLine(value);
+            }
             Console.ReadKey();
         }
     }
